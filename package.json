@@ -1,7 +1,7 @@
 {
   "name": "nodejs-weather-forecast",
   "version": "1.0.0",
-  "main": "app/app.js",
+  "main": "server/app.js",
   "author": "Jon Bonso <jsbonso@gmail.com>",
   "dependencies": {
     "bluebird": "^2.10.2",
@@ -33,7 +33,7 @@
     "node": ">=9.0.0"
   },
   "scripts": {
-    "start": "node app/app.js",
-    "test": "mocha app/__tests__ --recursive --timeout 10000 -r app/__tests__/testUtil.js -R spec"
+    "start": "nodemon server/app.js",
+    "test": "mocha server/__tests__ --recursive --timeout 10000 -r server/__tests__/testUtil.js -R spec"
   }
 }
