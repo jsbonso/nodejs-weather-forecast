@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather Forecaster</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Weather Forecaster</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        Developed by Jon Bonso
+      </form>
+    </div>
+  </nav>
+  <div id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form class="form-horizontal signup" role="form" id="fetchWeatherData">
+
+
+            <div class="input-group input-group-lg mt-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text btn-primary" id="inputGroup-sizing-lg">City: </span>
+              </div>
+              <input type="text" id="locationInput" class="form-control" aria-label="Large" 
+                     aria-describedby="inputGroup-sizing-sm" placeholder="Enter city (e.g. Sydney, Melbourne)">
+            </div>
+
+            <div class="form-group input-group input-group-lg mt-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text btn-primary" id="inputGroup-sizing-lg">Weekday: </span>
+                </div>
+              <select class="selectpicker form-control" id="dayofweekSelect">
+                <option value="">Weather for the Week</option>
+                <option value="Today">Today</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Fetch Weather Info  <i class="fa"></i></button>
+          </form>
+        </div>
+        <div class="col-lg-12 mt-3" id="weatherData">
+          <h2>Weather Data:  </h2>
+          <div class="table table-striped table-responsive" id="weatherCurrentlyTable">
+            <table class="table table-bordered table-hover">
+              <caption class="text-center">Please pick a City... </caption>
+            </table>
+          </div>
+
+          <div class="table table-striped table-responsive" id="weatherWeeklyTable">
+            <table class="table table-bordered table-hover">
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+
+  <!-- Main script-->
+  <script type="text/javascript" src="js/weather-ui.js"></script>
+</body>
+
+</html>
