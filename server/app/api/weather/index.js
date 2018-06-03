@@ -33,7 +33,6 @@ function calculateDate(inputDoW) {
         var currentDoW  = today.split(' ')[0].toLocaleLowerCase();
 
         if (daysOfWeek.indexOf(inputDoW) < daysOfWeek.indexOf(currentDoW)) {
-            console.log('tinapa: ' + (moment().add(increment,'days').format()));
             increment = daysOfWeek.length - (daysOfWeek.indexOf(currentDoW) - daysOfWeek.indexOf(inputDoW));
         }
         else {
