@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-weather-forecast",
+  "version": "1.0.0",
+  "main": "server/app.js",
+  "author": "Jon Bonso <jsbonso@gmail.com>",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "body-parser": "~1.5.0",
+    "chai-http": "^4.0.0",
+    "compression": "^1.6.1",
+    "cookie-parser": "~1.0.1",
+    "cors": "^2.7.1",
+    "express": "~4.0.0",
+    "express-handlebars": "^3.0.0",
+    "glob": "^5.0.15",
+    "lodash": "3.2.0",
+    "method-override": "~1.0.0",
+    "moment": "^2.9.0",
+    "nodemon": "^1.17.5",
+    "request": "^2.87.0",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.3.3",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.17.0",
+    "sinon-chai": "^2.8.0"
+  },
+  "engines": {
+    "node": ">=9.0.0"
+  },
+  "scripts": {
+    "start": "nodemon server/app.js",
+    "test": "mocha server/__tests__ --recursive --timeout 10000 -r server/__tests__/testUtil.js -R spec"
+  }
+}
