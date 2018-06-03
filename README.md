@@ -26,14 +26,14 @@ Expected URL: `http://localhost:/weather/:location`<br />
 Example URL:  `http://localhost:/weather/( sydney | brisbane )`<br />
 
 
-### Scenario Two: Display a weather forecast by Location filtered by Day
+#### Scenario Two: Display a weather forecast by Location filtered by Day
 
 A weather forcast should be displayed based upon the location and day specified in the url.<br />
 Expected URL: `http://localhost:<port>/weather/:location/:weekday`<br />
 Example URL:  `http://localhost:<port>/weather/:location/( monday | tuesday | etc .. )`<br />
 
 
-## Scenario Three: Display a weather forecast for Today
+#### Scenario Three: Display a weather forecast for Today
 
 A weather forcast should be displayed based upon the location and the current day<br />
 
