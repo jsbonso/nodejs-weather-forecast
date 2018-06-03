@@ -1,7 +1,7 @@
 {
   "name": "nodejs-weather-forecast",
   "version": "1.0.0",
-  "main": "server/app.js",
+  "main": "app/app.js",
   "author": "Jon Bonso <jsbonso@gmail.com>",
   "dependencies": {
     "bluebird": "^2.10.2",
@@ -13,6 +13,7 @@
     "express": "~4.0.0",
     "express-handlebars": "^3.0.0",
     "glob": "^5.0.15",
+    "heroku": "^7.0.86",
     "lodash": "3.2.0",
     "method-override": "~1.0.0",
     "moment": "^2.9.0",
@@ -32,7 +33,7 @@
     "node": ">=9.0.0"
   },
   "scripts": {
-    "start": "node server/app.js",
-    "test": "mocha server/__tests__ --recursive --timeout 10000 -r server/__tests__/testUtil.js -R spec"
+    "start": "node app/app.js",
+    "test": "mocha app/__tests__ --recursive --timeout 10000 -r app/__tests__/testUtil.js -R spec"
   }
 }
